@@ -26,5 +26,10 @@ def about():
     return render_template('about.html')
 
 
+@app.route('/')
+def home():
+    return 'My home Page'
+
+
 if __name__ == '__main__':
     app.run()
